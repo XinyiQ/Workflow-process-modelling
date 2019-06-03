@@ -1,0 +1,24 @@
+# ---------------------
+# Template for WPS function
+# ---------------------
+#---- used to specify the metadata requirements for the WPS function which include the title, abstract, inputs and outputs
+def title():
+    return "title" # title of the function
+
+def abstract():
+    return "abstract" # short description of the function
+#----An input must specify the identifier, title, abstract, data format and required status.
+def inputs():
+    return [
+            ['identifier', 'title','abstract','data format', True]
+    ]
+
+def outputs():
+    return [['identifier', 'title','abstract','data format']]
+
+def execute(parameters):
+    identifier = parameters.get('identifier')
+    if (not identifier is None):
+        identifier = identifier['value']
+    print("Content-type: application/json")
+    print()

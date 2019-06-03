@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><wps:Execute version="1.0.0" service="WPS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wps/1.0.0" xmlns:wfs="http://www.opengis.net/wfs" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:wcs="http://www.opengis.net/wcs/1.1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/wps/1.0.0 http://schemas.opengis.net/wps/1.0.0/wpsAll.xsd">
+  <ows:Identifier>union_wps_</ows:Identifier>
+  <wps:DataInputs>
+    <wps:Input>
+      <ows:Identifier>first</ows:Identifier>
+      <wps:Data>
+        <wps:ComplexData mimeType="application/wkt"><![CDATA[POLYGON ((-755226.75354172603692859 -1009167.14398036629427224,-755262.54693246085662395 -1016290.02873659669421613,-742770.65356600657105446 -1016111.06178292259573936,-743629.69494364247657359 -1009453.49110624496825039,-755226.75354172603692859 -1009167.14398036629427224))]]></wps:ComplexData>
+      </wps:Data>    
+    </wps:Input>
+    <wps:Input>
+      <ows:Identifier>second</ows:Identifier>
+       <wps:Data>
+        <wps:ComplexData mimeType="application/wkt"><![CDATA[POLYGON ((-746457.3728116936981678 -1007413.26783435989636928,-747065.86045418574940413 -1012961.24339825788047165,-739978.7690886901691556 -1012889.65661678824108094,-740193.52943309908732772 -1007771.20174170809332281,-746457.3728116936981678 -1007413.26783435989636928))]]></wps:ComplexData>
+      </wps:Data> 
+    </wps:Input>
+  </wps:DataInputs>
+  <wps:ResponseForm>
+    <wps:RawDataOutput mimeType="application/json">
+      <ows:Identifier>result</ows:Identifier>
+    </wps:RawDataOutput>
+  </wps:ResponseForm>
+</wps:Execute>
